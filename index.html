@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <img src="img/logo.png" alt="Logo IFSP">
+                        <h1>IFSP - Campus Birigui</h1>
+                    </div>
+                    <div class="nav-links">
+                        <a href="#home">Home</a>
+                        <a href="#cronograma">Cronograma</a>
+                        <a href="#palestrantes">Palestrantes</a>
+                        <a href="#local">Local</a>
+                        <a href="#contato">Contato</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Semana de Informática IFSP</h1>
+                <p>Campus Birigui | 26 a 30 de Maio de 2025</p>
+                <a href="#cronograma" class="btn">Ver Programação</a>
+            </div>
+        </section>
+
+        <section id="cronograma" class="section">
+            <div class="container">
+                <h2 class="section-title">Cronograma</h2>
+                <div class="schedule">
+                    <div class="day-tabs">
+                        <div class="day-tab active"
+                            data-day="segunda">Segunda-feira</div>
+                        <div class="day-tab" data-day="terca">Terça-feira</div>
+                        <div class="day-tab"
+                            data-day="quarta">Quarta-feira</div>
+                        <div class="day-tab"
+                            data-day="quinta">Quinta-feira</div>
+                        <div class="day-tab" data-day="sexta">Sexta-feira</div>
+                    </div>
+
+                    <div class="day-content active" id="segunda">
+                        <div class="event">
+                            <div class="event-time">09:00 - 10:30</div>
+                            <h3 class="event-title">Cerimônia de Abertura</h3>
+                            <p class="event-speaker">Direção do Campus e
+                                Coordenação de Informática</p>
+                            <p class="event-location">Auditório Principal</p>
+                        </div>
+                        <div class="event">
+                            <div class="event-time">10:45 - 12:00</div>
+                            <h3 class="event-title">Palestra: O Futuro da
+                                Inteligência Artificial</h3>
+                            <p class="event-speaker">Prof. Dr. Carlos Mendes</p>
+                            <p class="event-location">Auditório Principal</p>
+                        </div>
+                        <div class="event">
+                            <div class="event-time">14:00 - 17:00</div>
+                            <h3 class="event-title">Workshop: Desenvolvimento
+                                Web Moderno</h3>
+                            <p class="event-speaker">Eng. Amanda Silva</p>
+                            <p class="event-location">Laboratório 3</p>
+                        </div>
+                    </div>
+
+                    <div class="day-content" id="terca">
+                        <div class="event">
+                            <div class="event-time">09:00 - 12:00</div>
+                            <h3 class="event-title">Workshop: Python para
+                                Ciência de Dados</h3>
+                            <p class="event-speaker">Prof. Dr. Ricardo
+                                Oliveira</p>
+                            <p class="event-location">Laboratório 2</p>
+                        </div>
+                        <div class="event">
+                            <div class="event-time">14:00 - 15:30</div>
+                            <h3 class="event-title">Palestra: Segurança da
+                                Informação</h3>
+                            <p class="event-speaker">Eng. Marcelo Santos</p>
+                            <p class="event-location">Auditório Principal</p>
+                        </div>
+                        <div class="event">
+                            <div class="event-time">16:00 - 18:00</div>
+                            <h3 class="event-title">Mesa Redonda: Mercado de
+                                Trabalho em TI</h3>
+                            <p class="event-speaker">Convidados da Indústria</p>
+                            <p class="event-location">Sala de Conferências</p>
+                        </div>
+                    </div>
+
+                    <div class="day-content" id="quarta">
+                        <div class="event">
+                            <div class="event-time">09:00 - 12:00</div>
+                            <h3 class="event-title">Hackathon: Soluções
+                                Inovadoras</h3>
+                            <p class="event-speaker">Coordenado por Prof.
+                                Gabriela Lima</p>
+                            <p class="event-location">Laboratórios 1 e 2</p>
+                        </div>
+                        <div class="event">
+                            <div class="event-time">14:00 - 16:00</div>
+                            <h3 class="event-title">Palestra: Cloud
+                                Computing</h3>
+                            <p class="event-speaker">Eng. Felipe Marques</p>
+                            <p class="event-location">Auditório Principal</p>
+                        </div>
+                        <div class="event">
+                            <div class="event-time">16:30 - 18:00</div>
+                            <h3 class="event-title">Premiação do Hackathon</h3>
+                            <p class="event-speaker">Comissão Organizadora</p>
+                            <p class="event-location">Auditório Principal</p>
+                        </div>
+                    </div>
+
+                    <div class="day-content" id="quinta">
+                        <div class="event">
+                            <div class="event-time">09:00 - 10:30</div>
+                            <h3 class="event-title">Palestra: Blockchain e
+                                Criptomoedas</h3>
+                            <p class="event-speaker">Prof. Dr. Luiz Fernando</p>
+                            <p class="event-location">Auditório Principal</p>
+                        </div>
+                        <div class="event">
+                            <div class="event-time">10:45 - 12:00</div>
+                            <h3 class="event-title">Palestra: Internet das
+                                Coisas (IoT)</h3>
+                            <p class="event-speaker">Eng. Roberta Almeida</p>
+                            <p class="event-location">Auditório Principal</p>
+                        </div>
+                        <div class="event">
+                            <div class="event-time">14:00 - 17:00</div>
+                            <h3 class="event-title">Workshop: Desenvolvimento
+                                Mobile</h3>
+                            <p class="event-speaker">Prof. Marcos Paulo</p>
+                            <p class="event-location">Laboratório 3</p>
+                        </div>
+                    </div>
+
+                    <div class="day-content" id="sexta">
+                        <div class="event">
+                            <div class="event-time">09:00 - 12:00</div>
+                            <h3 class="event-title">Apresentação de Projetos dos
+                                Alunos</h3>
+                            <p class="event-speaker">Alunos e Orientadores</p>
+                            <p class="event-location">Saguão Principal</p>
+                        </div>
+                        <div class="event">
+                            <div class="event-time">14:00 - 15:30</div>
+                            <h3 class="event-title">Palestra de Encerramento:
+                                Tendências em TI</h3>
+                            <p class="event-speaker">Prof. Dr. Ana Costa</p>
+                            <p class="event-location">Auditório Principal</p>
+                        </div>
+                        <div class="event">
+                            <div class="event-time">16:00 - 18:00</div>
+                            <h3 class="event-title">Cerimônia de
+                                Encerramento</h3>
+                            <p class="event-speaker">Direção e Coordenação</p>
+                            <p class="event-location">Auditório Principal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="palestrantes" class="section">
+            <div class="container">
+                <h2 class="section-title">Palestrantes</h2>
+                <div class="speakers">
+                    <div class="speaker-card">
+                        <div class="speaker-image">
+                            <img src="/api/placeholder/200/200"
+                                alt="Palestrante">
+                        </div>
+                        <div class="speaker-info">
+                            <h3 class="speaker-name">Prof. Dr. Carlos
+                                Mendes</h3>
+                            <p class="speaker-role">Especialista em Inteligência
+                                Artificial</p>
+                            <p>Doutor em Ciência da Computação, pesquisador na
+                                área de IA e Machine Learning.</p>
+                        </div>
+                    </div>
+
+                    <div class="speaker-card">
+                        <div class="speaker-image">
+                            <img src="/api/placeholder/200/200"
+                                alt="Palestrante">
+                        </div>
+                        <div class="speaker-info">
+                            <h3 class="speaker-name">Eng. Amanda Silva</h3>
+                            <p class="speaker-role">Desenvolvedora Full
+                                Stack</p>
+                            <p>Engenheira de Software com 10 anos de experiência
+                                em desenvolvimento web.</p>
+                        </div>
+                    </div>
+
+                    <div class="speaker-card">
+                        <div class="speaker-image">
+                            <img src="/api/placeholder/200/200"
+                                alt="Palestrante">
+                        </div>
+                        <div class="speaker-info">
+                            <h3 class="speaker-name">Prof. Dr. Ricardo
+                                Oliveira</h3>
+                            <p class="speaker-role">Cientista de Dados</p>
+                            <p>Pesquisador e consultor em projetos de ciência de
+                                dados e Big Data.</p>
+                        </div>
+                    </div>
+
+                    <div class="speaker-card">
+                        <div class="speaker-image">
+                            <img src="/api/placeholder/200/200"
+                                alt="Palestrante">
+                        </div>
+                        <div class="speaker-info">
+                            <h3 class="speaker-name">Eng. Marcelo Santos</h3>
+                            <p class="speaker-role">Especialista em
+                                Segurança</p>
+                            <p>Consultor de segurança cibernética com
+                                experiência em grandes empresas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="local" class="section">
+            <div class="container">
+                <h2 class="section-title">Local do Evento</h2>
+                <div class="location-info">
+                    <h3>IFSP - Campus Birigui</h3>
+                    <p>Rua Pedro Cavalo, 709 - Portal da Pérola II, Birigui -
+                        SP, 16201-407</p>
+                    <div class="location-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14874.282556295939!2d-50.316952932177365!3d-21.248868071245713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9496157aebf1a10d%3A0x62e75a1db69a1e82!2sIFSP%20-%20Instituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20de%20S%C3%A3o%20Paulo%2C%20Campus%20Birigui!5e0!3m2!1spt-BR!2sbr!4v1745447082138!5m2!1spt-BR!2sbr"
+                            width="100%" height="100%" style="border:0;"
+                            allowfullscreen loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contato">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="Logo IFSP">
+                        <h2>IFSP - Campus Birigui</h2>
+                    </div>
+                    <p>Entre em contato: cre.bri@ifsp.edu.br | (18)
+                        3643-1160</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1HfNiPWVpd/"
+                            class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"><path
+                                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a
+                            href="https://www.instagram.com/ifsp.bri?igsh=MWxuaDFwNGJkaDI5dQ=="
+                            class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"><rect x="2" y="2"
+                                    width="20" height="20" rx="5"
+                                    ry="5"></rect><path
+                                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line
+                                    x1="17.5" y1="6.5" x2="17.51"
+                                    y2="6.5"></line></svg>
+                        </a>
+                        <a href="https://wa.me/551836431166" target="_blank"
+                            rel="noopener noreferrer"
+                            class="social-icon" aria-label="WhatsApp">
+                            <!-- WhatsApp SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24"
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.52 3.48A11.78 11.78 0 0 0 12.1 0a11.84 11.84 0 0 0-10 17.77L0 24l6.42-2.08a11.8 11.8 0 0 0 5.68 1.45h.06A11.75 11.75 0 0 0 24 11.88a11.66 11.66 0 0 0-3.48-8.4ZM12.1 21.54a9.6 9.6 0 0 1-4.89-1.32l-.35-.2-3.82 1.24 1.26-3.72-.24-.38a9.63 9.63 0 1 1 8.04 4.38Zm5.28-7.2c-.29-.15-1.7-.84-1.97-.93s-.46-.15-.66.15-.76.93-.94 1.13-.35.22-.64.07a8 8 0 0 1-2.36-1.46 8.88 8.88 0 0 1-1.64-2c-.17-.29 0-.45.13-.6s.29-.34.43-.51a2 2 0 0 0 .29-.49.55.55 0 0 0 0-.51c-.07-.15-.66-1.6-.91-2.2s-.48-.51-.66-.52h-.56a1.08 1.08 0 0 0-.78.37 3.25 3.25 0 0 0-1 2.42 5.62 5.62 0 0 0 1.17 2.91 12.82 12.82 0 0 0 4.78 4.53 5.55 5.55 0 0 0 3.4 1.2 3 3 0 0 0 2-.7 2.46 2.46 0 0 0 .55-1.77c-.08-.15-.26-.22-.55-.37Z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/@IFSPBirigui_oficial"
+                            class="social-icon" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24"
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a2.962 2.962 0 0 0-2.083-2.097C19.63 3.541 12 3.541 12 3.541s-7.629 0-9.415.548a2.962 2.962 0 0 0-2.083 2.097C0 7.971 0 12 0 12s0 4.029.502 5.814a2.962 2.962 0 0 0 2.083 2.097c1.786.548 9.415.548 9.415.548s7.629 0 9.415-.548a2.962 2.962 0 0 0 2.083-2.097C24 16.029 24 12 24 12s0-4.029-.502-5.814ZM9.545 15.568V8.432L15.818 12l-6.273 3.568Z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <p>&copy; 2025 IFSP - Campus Birigui - Todos os direitos
+                        reservados</p>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
