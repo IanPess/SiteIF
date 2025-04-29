@@ -78,7 +78,7 @@ nav {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -183,6 +183,45 @@ nav {
     color: var(--primary-color);
     font-weight: 500;
 }
+/* Estilo para o botão de inscrição em eventos */
+.event-register-btn {
+    display: inline-block;
+    background-color: #4e73df;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-top: 12px;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-register-btn:hover {
+    background-color: #224abe;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .event-register-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ajustes para o card de evento acomodar o novo botão */
+  .event {
+    padding-bottom: 16px;
+    position: relative;
+  }
+  
+  /* Espaçamento entre o último elemento e o botão */
+  .event-location {
+    margin-bottom: 10px;
+  }
 
 .speakers {
     display: grid;
@@ -209,6 +248,7 @@ nav {
     align-items: center;
     justify-content: center;
 }
+
 
 .speaker-info {
     padding: 1.5rem;
@@ -300,7 +340,24 @@ footer {
     }
     
     .hero h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+    
+    .day-tabs {
+        flex-direction: column;
+    }
+    
+    .day-tab {
+        border-bottom: 1px solid var(--light-color);
+    }
+}
+@media (max-width: 340px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .hero h1 {
+        font-size: 1.2rem;
     }
     
     .day-tabs {
