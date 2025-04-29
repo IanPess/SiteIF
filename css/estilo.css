@@ -351,20 +351,3 @@ footer {
         border-bottom: 1px solid var(--light-color);
     }
 }
-@media (max-width: 340px) {
-    .nav-links {
-        display: none;
-    }
-    
-    .hero h1 {
-        font-size: 1.2rem;
-    }
-    
-    .day-tabs {
-        flex-direction: column;
-    }
-    
-    .day-tab {
-        border-bottom: 1px solid var(--light-color);
-    }
-}
