@@ -177,6 +177,160 @@ nav {
     color: var(--light-text);
     font-style: italic;
 }
+.event-detail-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-top: 8px;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.event-detail-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.event-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.event-modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.event-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.2s;
+}
+
+.event-modal-close:hover {
+    color: #000;
+}
+
+.event-modal-header {
+    padding: 20px 20px 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.event-modal-title {
+    margin: 0 0 10px;
+    color: #333;
+    font-size: 22px;
+}
+
+.event-modal-time, 
+.event-modal-speaker, 
+.event-modal-location {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.event-modal-body {
+    padding: 20px;
+}
+
+.event-modal-body h4 {
+    margin: 15px 0 8px;
+    color: #444;
+}
+
+.event-modal-body p, 
+.event-modal-body ul {
+    margin: 0 0 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.event-modal-body ul {
+    padding-left: 20px;
+}
+
+.event-modal-body li {
+    margin-bottom: 5px;
+}
+
+.event-modal-footer {
+    padding: 15px 20px;
+    border-top: 1px solid #eaeaea;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 0 0 8px 8px;
+}
+
+.event-modal-register {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.event-modal-register:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos para os cards de eventos */
+.event {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.event-hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para os botões das tabs */
+.day-tab {
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.day-tab:hover:not(.active) {
+    background-color: #f5f5f5;
+}
 
 .event-location {
     margin-top: 0.5rem;
@@ -348,8 +502,6 @@ nav {
     cursor: pointer;
     color: #666;
 }
-
-
 .location-map {
     margin-top: 2rem;
     border-radius: 10px;
@@ -361,6 +513,7 @@ nav {
     align-items: center;
     justify-content: center;
 }
+
 
 footer {
     background-color: var(--dark-color);
