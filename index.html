@@ -106,73 +106,185 @@
 
     <section id="palestrantes" class="section">
       <div class="container">
-        <h2 class="section-title">Palestrantes</h2>
-        <div class="speakers">
-          <div class="speaker-card">
-            <div class="speaker-image">
-                <img src="/api/placeholder/200/200" alt="Palestrante" />
+          <h2 class="section-title">Palestrantes</h2>
+          <div class="speakers">
+              <div class="speaker-card" onclick="openModal('renaud')">
+                  <div class="speaker-image">
+                      <img src="img/teixeira.webp" alt="Renaud Teixeira" />
+                  </div>
+                  <div class="speaker-info">
+                      <h3 class="speaker-name">Renaud Teixeira</h3>
+                      <p class="speaker-role">
+                          Especialista em negócios com Inteligência Artificial
+                      </p>
+                  </div>
+              </div>
+
+              <div class="speaker-card" onclick="openModal('amanda')">
+                  <div class="speaker-image">
+                      <img src="img/cassio.webp" alt="Eng. Amanda Silva" />
+                  </div>
+                  <div class="speaker-info">
+                      <h3 class="speaker-name">Cassio Agnaldo Onodera</h3>
+                      <p class="speaker-role">Desenvolvedora Full Stack</p>
+                  </div>
+              </div>
+
+              <div class="speaker-card" onclick="openModal('ricardo')">
+                  <div class="speaker-image">
+                      <img src="img/edson.webp" alt="Prof. Dr. Ricardo Oliveira" />
+                  </div>
+                  <div class="speaker-info">
+                      <h3 class="speaker-name">Edson Koenigkan Junior</h3>
+                      <p class="speaker-role">Cientista de Dados</p>
+                  </div>
+              </div>
+
+              <div class="speaker-card" onclick="openModal('marcelo')">
+                  <div class="speaker-image">
+                      <img src="img/vargas.webp" alt="Eng. Marcelo Santos" />
+                  </div>
+                  <div class="speaker-info">
+                      <h3 class="speaker-name">Getúlio Teruo Tateoki</h3>
+                      <p class="speaker-role">Especialista em Segurança</p>
+                  </div>
+              </div>
+
+              <div class="speaker-card" onclick="openModal('marcelo')">
+                <div class="speaker-image">
+                    <img src="img/manoel.webp" alt="Eng. Marcelo Santos" />
+                </div>
+                <div class="speaker-info">
+                    <h3 class="speaker-name">Manoel Gomes de Andrade</h3>
+                    <p class="speaker-role">Especialista em Segurança</p>
+                </div>
             </div>
-            <div class="speaker-info">
-              <h3 class="speaker-name">Renaud Teixeira</h3>
-              <p class="speaker-role">
-                Especialista em negócios com Inteligência Artificial
-              </p>
-              <p>
-                Renaud Teixeira é especialista em negócios com IA, empreendedor
-                serial e fundador da Ilustritto e do Rancho das Videiras.
-                Formado em Administração pela FMU-SP. com pós-graduação no
-                INSPER e na FGV-SP, Renaud também se especializa em IA para
-                negócios pela EXAME. Apaixonado por criatividade, tecnologia e
-                empreendedorismo, ele integra inteligência artificial em vendas,
-                marketing, automação e criação artística.
-              </p>
-            </div>
+
+            <div class="speaker-card" onclick="openModal('marcelo')">
+              <div class="speaker-image">
+                  <img src="img/albino.webp" alt="Eng. Marcelo Santos" />
+              </div>
+              <div class="speaker-info">
+                  <h3 class="speaker-name">Rodrigo Albino</h3>
+                  <p class="speaker-role">Especialista em Segurança</p>
+              </div>
           </div>
 
-          <div class="speaker-card">
+          <div class="speaker-card" onclick="openModal('marcelo')">
             <div class="speaker-image">
-              <img src="/api/placeholder/200/200" alt="Palestrante" />
+                <img src="img/rodrigo.webp" alt="Eng. Marcelo Santos" />
             </div>
             <div class="speaker-info">
-              <h3 class="speaker-name">Eng. Amanda Silva</h3>
-              <p class="speaker-role">Desenvolvedora Full Stack</p>
-              <p>
-                Engenheira de Software com 10 anos de experiência em
-                desenvolvimento web.
-              </p>
+                <h3 class="speaker-name">Rodrigo Dos Santos Honda</h3>
+                <p class="speaker-role">Especialista em Segurança</p>
             </div>
-          </div>
-
-          <div class="speaker-card">
-            <div class="speaker-image">
-              <img src="/api/placeholder/200/200" alt="Palestrante" />
-            </div>
-            <div class="speaker-info">
-              <h3 class="speaker-name">Prof. Dr. Ricardo Oliveira</h3>
-              <p class="speaker-role">Cientista de Dados</p>
-              <p>
-                Pesquisador e consultor em projetos de ciência de dados e Big
-                Data.
-              </p>
-            </div>
-          </div>
-
-          <div class="speaker-card">
-            <div class="speaker-image">
-              <img src="/api/placeholder/200/200" alt="Palestrante" />
-            </div>
-            <div class="speaker-info">
-              <h3 class="speaker-name">Eng. Marcelo Santos</h3>
-              <p class="speaker-role">Especialista em Segurança</p>
-              <p>
-                Consultor de segurança cibernética com experiência em grandes
-                empresas.
-              </p>
-            </div>
-          </div>
         </div>
+
+        <div class="speaker-card" onclick="openModal('marcelo')">
+          <div class="speaker-image">
+              <img src="img/thiago.webp" alt="Eng. Marcelo Santos" />
+          </div>
+          <div class="speaker-info">
+              <h3 class="speaker-name">Thiago Glissoi Lopes</h3>
+              <p class="speaker-role">Especialista em Segurança</p>
+          </div>
       </div>
-    </section>
+          </div>
+      </div>
+  </section>
+
+  <!-- Modal para Renaud Teixeira -->
+  <div id="modal-renaud" class="modal">
+      <div class="modal-content">
+          <button class="close-button" onclick="closeModal('renaud')">&times;</button>
+          <div class="modal-header">
+              <img class="modal-image" src="img/Imagem do WhatsApp de 2025-04-28 à(s) 23.18.49_6d29cf47.jpg" alt="Renaud Teixeira">
+              <div class="modal-title">
+                  <h3>Renaud Teixeira</h3>
+                  <p>Especialista em negócios com Inteligência Artificial</p>
+              </div>
+          </div>
+          <div class="modal-body">
+              <p>Com mais de 15 anos de experiência em transformação digital, Renaud Teixeira tem ajudado empresas a implementar soluções de IA que geram resultados reais. Formado pela USP com MBA em Gestão de Negócios, ele é autor do livro "IA na Prática" e já palestrou em mais de 50 eventos internacionais.</p>
+              <p>Atualmente, é CEO da TechAI Solutions e consultor para grandes empresas do segmento financeiro e varejo.</p>
+          </div>
+          <div class="modal-footer">
+              <div class="social-icons">
+                  <a href="#" class="social-icono">LinkedIn</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Modal para Amanda Silva -->
+  <div id="modal-amanda" class="modal">
+      <div class="modal-content">
+          <button class="close-button" onclick="closeModal('amanda')">&times;</button>
+          <div class="modal-header">
+              <img class="modal-image" src="img/Imagem do WhatsApp de 2025-04-28 à(s) 23.18.49_6d29cf47.jpg" alt="Amanda Silva">
+              <div class="modal-title">
+                  <h3>Eng. Amanda Silva</h3>
+                  <p>Desenvolvedora Full Stack</p>
+              </div>
+          </div>
+          <div class="modal-body">
+              <p>Amanda Silva é engenheira de software com especialização em desenvolvimento web e mobile. Com passagens por grandes empresas como Google e Microsoft, ela traz uma vasta experiência em arquitetura de sistemas e aplicações distribuídas.</p>
+              <p>Além de seu trabalho como desenvolvedora, Amanda é uma entusiasta de open-source e contribui ativamente para projetos como React e TypeScript. Ela também é mentora na comunidade "Mulheres na Tecnologia".</p>
+          </div>
+          <div class="modal-footer">
+              <div class="social-icons">
+                  <a href="#" class="social-icono">LinkedIn</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Modal para Ricardo Oliveira -->
+  <div id="modal-ricardo" class="modal">
+      <div class="modal-content">
+          <button class="close-button" onclick="closeModal('ricardo')">&times;</button>
+          <div class="modal-header">
+              <img class="modal-image" src="/api/placeholder/200/200" alt="Ricardo Oliveira">
+              <div class="modal-title">
+                  <h3>Prof. Dr. Ricardo Oliveira</h3>
+                  <p>Cientista de Dados</p>
+              </div>
+          </div>
+          <div class="modal-body">
+              <p>Professor titular da Universidade de São Paulo, Dr. Ricardo Oliveira é um dos pioneiros em pesquisa de machine learning no Brasil. Com doutorado pelo MIT, suas pesquisas em processamento de linguagem natural têm sido publicadas nos mais conceituados jornais científicos.</p>
+              <p>Além da academia, Ricardo colabora com startups e grandes empresas na implementação de soluções de IA e análise preditiva. Seu último projeto foi o desenvolvimento de um sistema de predição para o setor bancário que reduziu fraudes em 60%.</p>
+          </div>
+          <div class="modal-footer">
+              <div class="social-icons">
+                  <a href="#" class="social-icono">LinkedIn</a>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Modal para Marcelo Santos -->
+  <div id="modal-marcelo" class="modal">
+      <div class="modal-content">
+          <button class="close-button" onclick="closeModal('marcelo')">&times;</button>
+          <div class="modal-header">
+              <img class="modal-image" src="/api/placeholder/200/200" alt="Marcelo Santos">
+              <div class="modal-title">
+                  <h3>Eng. Marcelo Santos</h3>
+                  <p>Especialista em Segurança</p>
+              </div>
+          </div>
+          <div class="modal-body">
+              <p>Engenheiro de Segurança da Informação com certificações CISSP e CEH, Marcelo Santos tem mais de 12 anos de experiência em proteção de dados e cibersegurança. Especialista em segurança ofensiva, ele já conduziu testes de penetração em mais de 200 empresas.</p>
+              <p>Marcelo é um palestrante frequente em conferências como Black Hat e DefCon, e é conhecido por suas demonstrações práticas de vulnerabilidades e técnicas de proteção. Atualmente, é diretor de segurança na CyberShield e consultor para órgãos governamentais.</p>
+          </div>
+          <div class="modal-footer">
+              <div class="social-icons">
+                  <a href="#" class="social-icono">LinkedIn</a>
+              </div>
+          </div>
+      </div>
+  </div>
 
     <section id="local" class="section">
       <div class="container">
