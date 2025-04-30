@@ -33,76 +33,336 @@
       </div>
     </section>
 
-    <section id="cronograma" class="section">
-      <div class="container">
-        <h2 class="section-title">Cronograma</h2>
-        <div class="schedule">
-          <div class="day-tabs">
-            <div class="day-tab active" data-day="segunda">Sábado 03/05</div>
-            <div class="day-tab" data-day="terca">Terça 06/05</div>
-            <div class="day-tab" data-day="quarta">Sábado 10/05</div>
-          </div>
+   <section id="cronograma" class="section">
+        <div class="container">
+            <h2 class="section-title">Cronograma</h2>
+            <div class="schedule">
+                <div class="day-tabs">
+                    <div class="day-tab active" data-day="sabado1">Sábado 03/05</div>
+                    <div class="day-tab" data-day="segunda">Segunda 05/05</div>
+                    <div class="day-tab" data-day="terca">Terça 06/05</div>
+                    <div class="day-tab" data-day="sabado2">Sábado 10/05</div>
+                </div>
 
-          <div class="day-content active" id="segunda">
-            <div class="event">
-              <div class="event-time">08:00 - 09:30</div>
-              <h3 class="event-title">Criação de Post Profissional no Photoshop: Design Rápido para Web e Redes Sociais</h3>
-              <p class="event-speaker">
-                Rodrigo Albino
-              </p>
-              <p class="event-location">Bloco E sala 105</p>
-            </div>
-            <div class="event">
-              <div class="event-time">08:00 - 11:00</div>
-              <h3 class="event-title">
-                Introdução à modelagem e impressão 3D
-              </h3>
-              <p class="event-speaker">Cassio Agnaldo Onodera</p>
-              <p class="event-location">Bloco E sala 103</p>
-              
-            </div>
-            <div class="event">
-              <div class="event-time">09:00 - 10:30</div>
-              <h3 class="event-title">IA na prática - como usar inteligencia artificial no seu dia a dia e projetos</h3>
-              <p class="event-speaker">Renaud Robert Machado Teixeira</p>
-              <p class="event-location">Bloco C - Auditório</p>
-            </div>
-            <a href="https://www.even3.com.br/infoind2025/" class="event-register-btn">Inscrever-se</a>
-          </div>
+                <div class="day-content active" id="sabado1">
+                    <div class="event">
+                        <div class="event-time">08:00 - 09:30</div>
+                        <h3 class="event-title">Oficina - Criação de Post Profissional no Photoshop: Design Rápido para Web e Redes Sociais</h3>
+                        <p class="event-speaker">Rodrigo Albino</p>
+                        <p class="event-location">Bloco E sala 105</p>
+                        <button class="event-detail-btn" onclick="openEventModal('photoshop')">Ver Detalhes</button>
+                    </div>
+                    
+                    <div class="event">
+                        <div class="event-time">08:00 - 11:00</div>
+                        <h3 class="event-title">Introdução à modelagem e impressão 3D</h3>
+                        <p class="event-speaker">Cassio Agnaldo Onodera</p>
+                        <p class="event-location">Bloco E sala 103</p>
+                        <button class="event-detail-btn" onclick="openEventModal('impressao3d')">Ver Detalhes</button>
+                    </div>
+                    
+                    <div class="event">
+                        <div class="event-time">09:00 - 10:30</div>
+                        <h3 class="event-title">IA na prática - como usar inteligência artificial no seu dia a dia e projetos</h3>
+                        <p class="event-speaker">Renaud Robert Machado Teixeira</p>
+                        <p class="event-location">Bloco C - Auditório</p>
+                        <button class="event-detail-btn" onclick="openEventModal('ia-pratica')">Ver Detalhes</button>
+                    </div>
+                    
+                    <a href="https://www.even3.com.br/infoind2025/" class="event-register-btn">Inscrever-se</a>
+                </div>
+                
+                <div class="day-content" id="segunda">
+                  <div class="event">
+                      <div class="event-time">19:00 - 22:20</div>
+                      <h3 class="event-title">Arduino com Tinkercad</h3>
+                      <p class="event-speaker">Getúlio Teruo Tateoki</p>
+                      <p class="event-location">Bloco B sala 102</p>
+                      <button class="event-detail-btn" onclick="openEventModal('industria-automotiva')">Ver Detalhes</button>
+                  </div>
+                  
+                  <div class="event">
+                      <div class="event-time">19:00 - 22:20</div>
+                      <h3 class="event-title">Simulações de Circuitos Digitais com Logsim</h3>
+                      <p class="event-speaker">Egressos da Automação e Mecatrônica</p>
+                      <p class="event-speaker">Manoel Gomes de Andrade</p>
+                      <p class="event-location">Bloco B sala 104</p>
+                      <button class="event-detail-btn" onclick="openEventModal('roda-conversa')">Ver Detalhes</button>
+                  </div>
 
-          <div class="day-content" id="terca">
-            <div class="event">
-              <div class="event-time">19:00 - 20:20</div>
-              <h3 class="event-title">
-                Indústria Automotiva: Infraestrutura de controle em processos automatizados, NR12, Robótica e Computação Visual
-              </h3>
-              <p class="event-speaker">Manoel Gomes de Andrade</p>
-              <p class="event-speaker">Rodrigo dos Santos Honda</p>
-              <p class="event-location">Bloco C - Auditório</p>
-            </div>
-            <div class="event">
-              <div class="event-time">20:30 - 22:30</div>
-              <h3 class="event-title">Roda de Conversa Experienciais, profissionais, mercado de trabalho e empregabilidade</h3>
-              <p class="event-speaker">Egressos da Automação e Mecatrônica</p>
-              <p class="event-speaker">Manoel Gomes de Andrade</p>
-              <p class="event-speaker">Rafael de Paiva Garcia</p>
-              <p class="event-location">Bloco C - Auditório</p>
-            </div>
-            <a href="https://www.even3.com.br/infoind2025/" class="event-register-btn">Inscrever-se</a>
-          </div>
+                  <div class="event">
+                    <div class="event-time">19:15 - 20:45</div>
+                    <h3 class="event-title">Simulações de Circuitos Digitais com Logsim</h3>
+                    <p class="event-speaker">Egressos da Automação e Mecatrônica</p>
+                    <p class="event-speaker">Thiago Glissoi Lopes</p>
+                    <p class="event-location">Bloco B sala 104 (LabMaker)</p>
+                    <button class="event-detail-btn" onclick="openEventModal('roda-conversa')">Ver Detalhes</button>
+                </div>
+                  
+                  <a href="https://www.even3.com.br/infoind2025/" class="event-register-btn">Inscrever-se</a>
+              </div>
 
-          <div class="day-content" id="quarta">
-            <div class="event">
-              <div class="event-time">09:00 - 10:30</div>
-              <h3 class="event-title">Controle da Mente no Enfrentamento do Estresse e da Ansiedade através da Hipnose com foco no Acadêmico e Profissional</h3>
-              <p class="event-speaker">Coordenado por Prof. Gabriela Lima</p>
-              <p class="event-location">Bloco C - Auditório</p>
+                <div class="day-content" id="terca">
+                    <div class="event">
+                        <div class="event-time">19:00 - 20:20</div>
+                        <h3 class="event-title">Indústria Automotiva: Infraestrutura de controle em processos automatizados, NR12, Robótica e Computação Visual</h3>
+                        <p class="event-speaker">Manoel Gomes de Andrade</p>
+                        <p class="event-speaker">Rodrigo dos Santos Honda</p>
+                        <p class="event-location">Bloco C - Auditório</p>
+                        <button class="event-detail-btn" onclick="openEventModal('industria-automotiva')">Ver Detalhes</button>
+                    </div>
+                    
+                    <div class="event">
+                        <div class="event-time">20:30 - 22:30</div>
+                        <h3 class="event-title">Roda de Conversa Experienciais, profissionais, mercado de trabalho e empregabilidade</h3>
+                        <p class="event-speaker">Egressos da Automação e Mecatrônica</p>
+                        <p class="event-speaker">Manoel Gomes de Andrade</p>
+                        <p class="event-speaker">Rafael de Paiva Garcia</p>
+                        <p class="event-location">Bloco C - Auditório</p>
+                        <button class="event-detail-btn" onclick="openEventModal('roda-conversa')">Ver Detalhes</button>
+                    </div>
+                    
+                    <a href="https://www.even3.com.br/infoind2025/" class="event-register-btn">Inscrever-se</a>
+                </div>
+
+                <div class="day-content" id="sabado2">
+                    <div class="event">
+                        <div class="event-time">09:00 - 10:30</div>
+                        <h3 class="event-title">Controle da Mente no Enfrentamento do Estresse e da Ansiedade através da Hipnose com foco no Acadêmico e Profissional</h3>
+                        <p class="event-speaker">Coordenado por Prof. Gabriela Lima</p>
+                        <p class="event-location">Bloco C - Auditório</p>
+                        <button class="event-detail-btn" onclick="openEventModal('hipnose')">Ver Detalhes</button>
+                    </div>
+                    
+                    <a href="https://www.even3.com.br/infoind2025/" class="event-register-btn">Inscrever-se</a>
+                </div>
             </div>
-            <a href="https://www.even3.com.br/infoind2025/" class="event-register-btn">Inscrever-se</a>
-          </div>
         </div>
-      </div>
     </section>
+
+    <!-- Modais dos Eventos -->
+    <!-- Modal Photoshop -->
+    <div id="event-modal-photoshop" class="event-modal">
+        <div class="event-modal-content">
+            <button class="event-modal-close" onclick="closeEventModal('photoshop')">&times;</button>
+            <div class="event-modal-header">
+                <h3 class="event-modal-title">Oficina - Criação de Post Profissional no Photoshop</h3>
+                <p class="event-modal-time">Sábado, 03/05 • 08:00 - 09:30</p>
+                <p class="event-modal-speaker">Apresentado por: Rodrigo Albino</p>
+                <p class="event-modal-location">Local: Bloco E sala 105</p>
+            </div>
+            <div class="event-modal-body">
+                <h4>Descrição:</h4>
+                <p>Nesta oficina prática, os participantes aprenderão técnicas rápidas e eficientes para criar posts profissionais para web e redes sociais utilizando o Adobe Photoshop. A oficina abordará desde conceitos básicos de design até técnicas avançadas de edição.</p>
+                
+                <h4>O que você vai aprender:</h4>
+                <ul>
+                    <li>Configuração do documento com dimensões otimizadas para diferentes plataformas</li>
+                    <li>Uso eficiente de camadas e máscaras</li>
+                    <li>Técnicas de composição visual para engajamento</li>
+                    <li>Ajustes de cor e tratamento de imagem</li>
+                    <li>Tipografia para web</li>
+                    <li>Exportação otimizada para diferentes plataformas</li>
+                </ul>
+                
+                <h4>Pré-requisitos:</h4>
+                <p>Conhecimentos básicos de informática. Recomendado trazer notebook com Adobe Photoshop instalado (versão de teste gratuita é suficiente).</p>
+                
+                <h4>Vagas limitadas:</h4>
+                <p>20 participantes</p>
+            </div>
+            <div class="event-modal-footer">
+                <p>Participação mediante inscrição prévia</p>
+                <a href="https://www.even3.com.br/infoind2025/" class="event-modal-register">Inscrever-se</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Impressão 3D -->
+    <div id="event-modal-impressao3d" class="event-modal">
+        <div class="event-modal-content">
+            <button class="event-modal-close" onclick="closeEventModal('impressao3d')">&times;</button>
+            <div class="event-modal-header">
+                <h3 class="event-modal-title">Introdução à modelagem e impressão 3D</h3>
+                <p class="event-modal-time">Sábado, 03/05 • 08:00 - 11:00</p>
+                <p class="event-modal-speaker">Apresentado por: Cassio Agnaldo Onodera</p>
+                <p class="event-modal-location">Local: Bloco E sala 103</p>
+            </div>
+            <div class="event-modal-body">
+                <h4>Descrição:</h4>
+                <p>Este workshop introdutório oferece uma visão completa do processo de modelagem e impressão 3D, desde os conceitos básicos até a produção de peças funcionais. Os participantes terão a oportunidade de ver demonstrações práticas e entender o fluxo de trabalho completo.</p>
+                
+                <h4>Tópicos abordados:</h4>
+                <ul>
+                    <li>Fundamentos da modelagem 3D</li>
+                    <li>Softwares de modelagem mais utilizados no mercado</li>
+                    <li>Tecnologias de impressão 3D disponíveis</li>
+                    <li>Preparação de arquivos para impressão</li>
+                    <li>Materiais e suas aplicações</li>
+                    <li>Demonstração prática de impressão</li>
+                    <li>Aplicações industriais e acadêmicas</li>
+                </ul>
+                
+                <h4>O que levar:</h4>
+                <p>Não é necessário trazer equipamentos. Todo material será fornecido durante o workshop.</p>
+                
+                <h4>Público-alvo:</h4>
+                <p>Estudantes, profissionais e entusiastas interessados em tecnologias de fabricação digital.</p>
+            </div>
+            <div class="event-modal-footer">
+                <p>Workshop com demonstração prática</p>
+                <a href="https://www.even3.com.br/infoind2025/" class="event-modal-register">Inscrever-se</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal IA na Prática -->
+    <div id="event-modal-ia-pratica" class="event-modal">
+        <div class="event-modal-content">
+            <button class="event-modal-close" onclick="closeEventModal('ia-pratica')">&times;</button>
+            <div class="event-modal-header">
+                <h3 class="event-modal-title">IA na prática - como usar inteligência artificial no seu dia a dia e projetos</h3>
+                <p class="event-modal-time">Sábado, 03/05 • 09:00 - 10:30</p>
+                <p class="event-modal-speaker">Apresentado por: Renaud Robert Machado Teixeira</p>
+                <p class="event-modal-location">Local: Bloco C - Auditório</p>
+            </div>
+            <div class="event-modal-body">
+                <h4>Descrição:</h4>
+                <p>Nesta palestra interativa, Renaud Teixeira apresenta aplicações práticas de Inteligência Artificial que podem ser implementadas imediatamente em sua rotina diária e projetos profissionais. Através de exemplos reais e demonstrações ao vivo, os participantes aprenderão como aproveitar o potencial das ferramentas de IA existentes.</p>
+                
+                <h4>Principais tópicos:</h4>
+                <ul>
+                    <li>Desmistificando a IA: o que é realmente possível hoje</li>
+                    <li>Ferramentas gratuitas e acessíveis de IA para todos os níveis</li>
+                    <li>Casos de uso práticos para estudantes e profissionais</li>
+                    <li>Prompt engineering: como obter os melhores resultados dos modelos de IA</li>
+                    <li>Integrando IA em projetos de desenvolvimento</li>
+                    <li>Considerações éticas e limitações da tecnologia atual</li>
+                </ul>
+                
+                <h4>Diferenciais:</h4>
+                <p>A palestra inclui uma sessão de perguntas e respostas onde o palestrante abordará casos específicos sugeridos pela audiência.</p>
+                
+                <h4>Público-alvo:</h4>
+                <p>Estudantes, profissionais de tecnologia, gestores e qualquer pessoa interessada em aumentar sua produtividade com IA.</p>
+            </div>
+            <div class="event-modal-footer">
+                <p>Palestra com demonstrações práticas</p>
+                <a href="https://www.even3.com.br/infoind2025/" class="event-modal-register">Inscrever-se</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Indústria Automotiva -->
+    <div id="event-modal-industria-automotiva" class="event-modal">
+        <div class="event-modal-content">
+            <button class="event-modal-close" onclick="closeEventModal('industria-automotiva')">&times;</button>
+            <div class="event-modal-header">
+                <h3 class="event-modal-title">Indústria Automotiva: Infraestrutura de controle em processos automatizados, NR12, Robótica e Computação Visual</h3>
+                <p class="event-modal-time">Terça, 06/05 • 19:00 - 20:20</p>
+                <p class="event-modal-speaker">Apresentado por: Manoel Gomes de Andrade e Rodrigo dos Santos Honda</p>
+                <p class="event-modal-location">Local: Bloco C - Auditório</p>
+            </div>
+            <div class="event-modal-body">
+                <h4>Descrição:</h4>
+                <p>Esta palestra aborda os avanços tecnológicos na indústria automotiva, com foco especial em automação, segurança e visão computacional. Os especialistas Manoel Gomes e Rodrigo Honda compartilharão suas experiências em projetos reais do setor.</p>
+                
+                <h4>Temas abordados:</h4>
+                <ul>
+                    <li>Panorama atual da automação na indústria automotiva brasileira</li>
+                    <li>Sistemas de controle e monitoramento em linhas de produção</li>
+                    <li>Implementação da NR12 em ambientes industriais automatizados</li>
+                    <li>Aplicações de robótica colaborativa</li>
+                    <li>Inspeção de qualidade utilizando computação visual</li>
+                    <li>Desafios e oportunidades para profissionais da área</li>
+                </ul>
+                
+                <h4>Sobre os palestrantes:</h4>
+                <p>Manoel Gomes de Andrade possui mais de 20 anos de experiência em automação industrial, tendo atuado em grandes montadoras. Rodrigo dos Santos Honda é especialista em visão computacional aplicada a processos industriais e consultor em projetos de robotização.</p>
+                
+                <h4>Público-alvo:</h4>
+                <p>Estudantes e profissionais dos cursos de Automação, Mecatrônica, Engenharia e áreas correlatas.</p>
+            </div>
+            <div class="event-modal-footer">
+                <p>Vagas limitadas à capacidade do auditório</p>
+                <a href="https://www.even3.com.br/infoind2025/" class="event-modal-register">Inscrever-se</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Roda de Conversa -->
+    <div id="event-modal-roda-conversa" class="event-modal">
+        <div class="event-modal-content">
+            <button class="event-modal-close" onclick="closeEventModal('roda-conversa')">&times;</button>
+            <div class="event-modal-header">
+                <h3 class="event-modal-title">Roda de Conversa Experienciais, profissionais, mercado de trabalho e empregabilidade</h3>
+                <p class="event-modal-time">Terça, 06/05 • 20:30 - 22:30</p>
+                <p class="event-modal-speaker">Participantes: Egressos da Automação e Mecatrônica, Manoel Gomes de Andrade, Rafael de Paiva Garcia</p>
+                <p class="event-modal-location">Local: Bloco C - Auditório</p>
+            </div>
+            <div class="event-modal-body">
+                <h4>Descrição:</h4>
+                <p>Uma oportunidade única de interagir com profissionais experientes e ex-alunos bem-sucedidos no mercado. Esta roda de conversa abordará desafios reais, trajetórias profissionais e estratégias para destacar-se no competitivo mercado de trabalho na área de tecnologia e automação.</p>
+                
+                <h4>Tópicos de discussão:</h4>
+                <ul>
+                    <li>Transição da academia para o mercado de trabalho</li>
+                    <li>Competências mais valorizadas pelos empregadores</li>
+                    <li>Certificações e especializações recomendadas</li>
+                    <li>Desafios e oportunidades no setor industrial</li>
+                    <li>Empreendedorismo na área de automação e tecnologia</li>
+                    <li>Dicas de networking e desenvolvimento de carreira</li>
+                </ul>
+                
+                <h4>Formato:</h4>
+                <p>O evento seguirá um formato aberto de perguntas e respostas, onde os participantes poderão interagir diretamente com os convidados. Haverá também um espaço para networking ao final da sessão.</p>
+                
+                <h4>Público-alvo:</h4>
+                <p>Estudantes em fase final de curso, recém-formados e profissionais em busca de recolocação ou crescimento na carreira.</p>
+            </div>
+            <div class="event-modal-footer">
+                <p>Evento aberto a perguntas dos participantes</p>
+                <a href="https://www.even3.com.br/infoind2025/" class="event-modal-register">Inscrever-se</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Hipnose -->
+    <div id="event-modal-hipnose" class="event-modal">
+        <div class="event-modal-content">
+            <button class="event-modal-close" onclick="closeEventModal('hipnose')">&times;</button>
+            <div class="event-modal-header">
+                <h3 class="event-modal-title">Controle da Mente no Enfrentamento do Estresse e da Ansiedade através da Hipnose com foco no Acadêmico e Profissional</h3>
+                <p class="event-modal-time">Sábado, 10/05 • 09:00 - 10:30</p>
+                <p class="event-modal-speaker">Coordenado por: Prof. Gabriela Lima</p>
+                <p class="event-modal-location">Local: Bloco C - Auditório</p>
+            </div>
+            <div class="event-modal-body">
+                <h4>Descrição:</h4>
+                <p>Esta palestra apresenta técnicas baseadas em hipnose clínica para o gerenciamento do estresse e ansiedade, especialmente voltadas para o ambiente acadêmico e profissional. A Prof. Gabriela Lima, especialista em hipnoterapia, compartilhará métodos práticos que podem ser aplicados no dia a dia.</p>
+                
+                <h4>Conteúdo programático:</h4>
+                <ul>
+                    <li>Desmistificando a hipnose: ciência x mitos populares</li>
+                    <li>Como funciona o estresse: mecanismos cerebrais e fisiológicos</li>
+                    <li>Impactos da ansiedade no desempenho acadêmico e profissional</li>
+                    <li>Técnicas de auto-hipnose para momentos de alta pressão</li>
+                    <li>Exercícios práticos de respiração e visualização</li>
+                    <li>Construção de rotinas mentais para equilíbrio emocional</li>
+                </ul>
+                
+                <h4>Diferenciais:</h4>
+                <p>A palestra inclui uma demonstração prática de técnicas de relaxamento e a distribuição de material complementar com exercícios para prática individual.</p>
+                
+                <h4>Observação importante:</h4>
+                <p>Esta é uma abordagem educacional e complementar. Não substitui tratamentos médicos ou psicológicos em casos de transtornos diagnosticados.</p>
+            </div>
+            <div class="event-modal-footer">
+                <p>Inclui material complementar para os participantes</p>
+                <a href="https://www.even3.com.br/infoind2025/" class="event-modal-register">Inscrever-se</a>
+            </div>
+        </div>
+    </div>
 
     <section id="palestrantes" class="section">
       <div class="container">
@@ -189,6 +449,24 @@
               <p class="speaker-role">Especialista em Segurança</p>
           </div>
       </div>
+      <div class="speaker-card" onclick="openModal('Rafael')">
+        <div class="speaker-image">
+            <img src="img/rafael.webp" alt="Eng. Marcelo Santos" />
+        </div>
+        <div class="speaker-info">
+            <h3 class="speaker-name">Rafael de Paiva Garcia</h3>
+            <p class="speaker-role">Especialista em Segurança</p>
+        </div>
+    </div>
+    <div class="speaker-card">
+      <div class="speaker-image">
+          <img src="img/egressos.svg" alt="Eng. Marcelo Santos" />
+      </div>
+      <div class="speaker-info">
+          <h3 class="speaker-name">Egressos da Automação e Mecatrônica</h3>
+          <p class="speaker-role">Especialista em Segurança</p>
+      </div>
+  </div>
           </div>
       </div>
   </section>
@@ -285,6 +563,8 @@
           </div>
       </div>
   </div>
+
+    
 
     <section id="local" class="section">
       <div class="container">
