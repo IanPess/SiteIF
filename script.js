@@ -58,3 +58,36 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('load', checkScroll);
     window.addEventListener('scroll', checkScroll);
 });
+function openModal(id) {
+    document.getElementById('modal-' + id).style.display = 'block';
+    document.body.style.overflow = 'hidden'; // Previne rolagem da página quando o modal está aberto
+}
+
+function closeModal(id) {
+    document.getElementById('modal-' + id).style.display = 'none';
+    document.body.style.overflow = 'auto'; // Restaura a rolagem da página
+}
+
+// Fecha o modal se o usuário clicar fora dele
+window.onclick = function(event) {
+    const modals = document.getElementsByClassName('modal');
+    for (let i = 0; i < modals.length; i++) {
+        if (event.target == modals[i]) {
+            modals[i].style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    }
+}
+
+// Fecha o modal ao pressionar a tecla ESC
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        const modals = document.getElementsByClassName('modal');
+        for (let i = 0; i < modals.length; i++) {
+            if (modals[i].style.display === 'block') {
+                modals[i].style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    }
+});
