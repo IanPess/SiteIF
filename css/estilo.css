@@ -439,6 +439,42 @@ nav {
     padding: 20px;
     box-sizing: border-box;
 }
+/* Estilo para os botões agrupados */
+.event-modal-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+/* Estilo para o botão de download de PDF */
+.event-modal-download {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4CAF50; /* Verde para distinguir do botão de inscrição */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.event-modal-download:hover {
+    background-color: #3e8e41;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.event-modal-download:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Adicionar ícone de download (opcional) */
+.event-modal-download::before {
+    content: "⬇️ ";
+    margin-right: 5px;
+}
 
 .modal-content {
     background-color: var(--white);
